@@ -11,6 +11,43 @@
     <title>Herpine Dashboard</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li>Menu Item 1</li>
+            </ul>
+        </nav>
+        <h1>Herpine Besucher Dashboard</h1>
+        <p>Page Subheading with <mark>highlighting</mark></p>
+        <br>
+    </header>
+    <main>
+        <hr>
+        <section>
+            <header>
+                <h2>Besucher Zeitreihe</h2>
+                <p>So viele Besucher waren in den letzten 10 Tagen in der Herpine</p>
+            </header>
+            
+            <!-- Population time series over the last 10 days -->
+            <canvas id="timeseries10days"></canvas>
+        </section>
+        <hr>
+
+        <section>
+            <header>
+                <h2>Besucherverteilung je Wochentag</h2>
+                <p>So viele Besucher kommen durchschnittlich an den einzelnen Wochentagen</p>
+            </header>
+            
+            <!-- Mean population per weekday -->
+            <canvas id="meanWeekday"></canvas>
+        </section>
+        <hr>
+
+    </main>
+        
+    <script src="/js/chart.min.js"></script>
+    <script src="/js/functions.js"></script>
 </body>
 </html>
