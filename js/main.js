@@ -6,19 +6,29 @@ let data = [20, 50, 70];
 const startDate = new Date(2020, 0, 1);
 const labels = [];
 for (let i = -7; i < 3; i++) {
-  const date = Utils.newDateStringDate(i);
+  const date = Utils.parseISODate(Utils.newDateStringDate(i));
   labels.push(date.toString());
 }
 
-console.log(labels);
-
-
 const ctxTimeSeries = document.getElementById('timeseries10days').getContext('2d');
-
+const TimeSeriesChart = new Chart(ctxTimeSeries, {
+    type: "line",
+    data: {
+        labels: labels,
+        datasets: [
+            {
+                label: "Besucherzahl",
+                data: [20, 50, 70, 10, 5, 80, 60, 10, 90, 10],
+                borderColor: Utils.CHART_COLORS.blue,
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            }
+        ]
+    }
+});
 
 
 const ctxWeekdays = document.getElementById('meanWeekday').getContext('2d');
-const myChart = new Chart(ctxWeekdays, {
+const WeekdayChart = new Chart(ctxWeekdays, {
     type: 'bar',
     data: {
         labels: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],
