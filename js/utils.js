@@ -1,4 +1,6 @@
-// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+const DateTime = luxon.DateTime;
+
+let now = DateTime.now();
 
 const MONTHS = [
   'Januar',
@@ -28,4 +30,20 @@ export function months(config) {
   }
 
   return values;
+}
+
+export function newDate(days) {
+  return DateTime.now().plus({days}).toJSDate();
+}
+
+export function newDateString(days) {
+  return DateTime.now().plus({days}).toISO();
+}
+
+export function newDateStringDate(days) {
+  return DateTime.now().plus({days}).toISODate();
+}
+
+export function parseISODate(str) {
+  return DateTime.fromISO(str);
 }
