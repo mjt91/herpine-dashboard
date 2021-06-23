@@ -1,8 +1,24 @@
 import * as Utils from "./utils.js";
 
 
-var ctx = document.getElementById('meanWeekday').getContext('2d');
-var myChart = new Chart(ctx, {
+let data = [20, 50, 70];
+
+const startDate = new Date(2020, 0, 1);
+const labels = [];
+for (let i = -7; i < 3; i++) {
+  const date = Utils.newDateStringDate(i);
+  labels.push(date.toString());
+}
+
+console.log(labels);
+
+
+const ctxTimeSeries = document.getElementById('timeseries10days').getContext('2d');
+
+
+
+const ctxWeekdays = document.getElementById('meanWeekday').getContext('2d');
+const myChart = new Chart(ctxWeekdays, {
     type: 'bar',
     data: {
         labels: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],
@@ -36,7 +52,3 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-
-
-const labels = Utils.months({count:7});
-console.log(labels);
