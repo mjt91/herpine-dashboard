@@ -29,6 +29,7 @@ import * as Utils from "./utils.js";
                             borderColor: Utils.CHART_COLORS.blue,
                             backgroundColor: 'rgba(54, 162, 235, 0.2)',
                             tension: 0.3,
+                            fill: true,
                         },
                     ]
                 }
