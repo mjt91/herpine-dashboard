@@ -44,8 +44,8 @@ export function newDateStringDate(days) {
   return DateTime.now().plus({days}).toISODate();
 }
 
-export function parseISODate(str) {
-  return DateTime.fromISO(str).toFormat("DDDD");
+export function parseISODate(str, format) {
+  return DateTime.fromISO(str).toFormat(format);
 }
 
 export const CHART_COLORS = {
