@@ -37,7 +37,7 @@ import * as Utils from "./utils.js";
 
 (function() {
     const ctxWeekdays = document.getElementById('meanWeekday').getContext('2d');
-    const WeekdayChart = new Chart(ctxWeekdays, {
+    new Chart(ctxWeekdays, {
         type: 'bar',
         data: {
             labels: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],
