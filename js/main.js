@@ -1,11 +1,7 @@
 import * as Utils from "./utils.js";
 
-
-let data = [20, 50, 70];
-
-const startDate = new Date(2020, 0, 1);
 const labels = [];
-for (let i = -7; i < 3; i++) {
+for (let i = -10; i < 0; i++) {
   const date = Utils.parseISODate(Utils.newDateStringDate(i));
   labels.push(date.toString());
 }
