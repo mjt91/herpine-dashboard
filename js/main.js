@@ -6,14 +6,16 @@ import * as Utils from "./utils.js";
             return response.json();
         })
         .then(function(myJson) {
-            // get data from json
-            const data = Object.values(myJson).slice(-10);
             // define labels
             const labels = [];
             const keys = Object.keys(myJson).slice(-10);
             keys.forEach((element) => {
                 labels.push(Utils.parseISODate(element, "DDDD"));
             });
+            
+            // get data from json
+            const data = Object.values(myJson).slice(-10);
+
             // create chart
             const ctxTimeSeries = document.getElementById('timeseries10days').getContext('2d');
             new Chart(ctxTimeSeries, {
@@ -23,7 +25,6 @@ import * as Utils from "./utils.js";
                     datasets: [
                         {
                             label: "Besucherzahl 2021",
-                            // data: [ 100, 55, 20, 40, 100, 20, 30, 40, 50, 60 ],
                             data: data,
                             borderColor: Utils.CHART_COLORS.blue,
                             backgroundColor: 'rgba(54, 162, 235, 0.2)',
