@@ -1,13 +1,13 @@
 {
     "2021-06-16": {"guests": 130, "watertemp": 22},
-    "2021-06-17": {"guests": 100,"watertemp": 22},
-    "2021-06-18": {"guests": 55, "watertemp": 22},
+    "2021-06-17": {"guests": 100,"watertemp": 21},
+    "2021-06-18": {"guests": 55, "watertemp": 23},
     "2021-06-19": {"guests": 20, "watertemp": 22},
     "2021-06-20": {"guests": 40, "watertemp": 22},
-    "2021-06-21": {"guests": 10, "watertemp": 22},
-    "2021-06-22": {"guests": 20, "watertemp": 22},
-    "2021-06-23": {"guests": 30, "watertemp": 22},
-    "2021-06-24": {"guests": 40, "watertemp": 22},
+    "2021-06-21": {"guests": 10, "watertemp": 21},
+    "2021-06-22": {"guests": 20, "watertemp": 20},
+    "2021-06-23": {"guests": 30, "watertemp": 19},
+    "2021-06-24": {"guests": 40, "watertemp": 20},
     "2021-06-25": {"guests": 50, "watertemp": 22},
     "2021-06-26": {"guests": 60, "watertemp": 22}
 }
