@@ -1,0 +1,20 @@
+{
+    "Dienstag":{
+        "GUESTS":10.3639846743,
+        "WATERTEMP":22,
+        "DIFF":-0.0881226054,
+        "DIFF_ABS":0.2218045113
+    },
+    "Montag":{
+        "GUESTS":88.3846153846,
+        "WATERTEMP":22,
+        "DIFF":0.0,
+        "DIFF_ABS":0.358974359
+    },
+    "Sonntag":{
+        "GUESTS":88.3846153846,
+        "WATERTEMP":22,
+        "DIFF":2.3076923077,
+        "DIFF_ABS":2.3846153846
+    }
+}
