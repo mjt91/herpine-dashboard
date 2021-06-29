@@ -115,3 +115,15 @@ import * as Utils from "./utils.js";
         }
     });
 })();
+
+(function() {
+    fetch("./data/update.txt")
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(text) {
+            console.log(text);
+            const updateTime = text;
+            document.getElementById("update").textContent=Utils.parseISODate(updateTime, "f");
+        })
+})();
