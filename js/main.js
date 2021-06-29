@@ -15,8 +15,8 @@ import * as Utils from "./utils.js";
             
             // get data from json
             const herpineData = Object.values(myJson).slice(-10);
-            const guests = herpineData.map(a => a.guests);
-            const watertemp = herpineData.map(a => a.watertemp); 
+            const guests = herpineData.map(a => a.DIFF_ABS);
+            const watertemp = herpineData.map(a => a.WATERTEMP); 
             console.log(guests);
             console.log(watertemp);
 
