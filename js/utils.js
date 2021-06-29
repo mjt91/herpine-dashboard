@@ -1,7 +1,5 @@
 const DateTime = luxon.DateTime;
 
-let now = DateTime.now();
-
 const MONTHS = [
   'Januar',
   'Februar',
