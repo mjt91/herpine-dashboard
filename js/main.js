@@ -36,7 +36,7 @@ import * as Utils from "./utils.js";
                         label: "Wassertemperatur 2021",
                         data: watertemp,
                         borderColor: Utils.CHART_COLORS.yellow,
-                        backgroundColor: 'rgb(255, 205, 86, 0.2)',
+                        backgroundColor: Utils.CHART_COLORS.yellow,
                         tension: 0.3,
                         fill: false,
                         yAxisID: 'y1',
@@ -44,6 +44,15 @@ import * as Utils from "./utils.js";
                 ]
             };
             const config = {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                hover: {
+                    mode: 'nearest',
+                    intersect: true
+                },
                 scales: {
                     y: {
                         type: 'linear',
