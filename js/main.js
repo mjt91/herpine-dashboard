@@ -97,8 +97,7 @@ import * as Utils from "./utils.js";
             const weeklyData = [
                 myJson.Montag.GUESTS,
                 myJson.Dienstag.GUESTS,
-                // myJson.Mittwoch.GUESTS,
-                0,
+                myJson.Mittwoch.GUESTS,
                 // myJson.Freitag.GUESTS,
                 0,
                 // myJson.Donnerstag.GUESTS,
