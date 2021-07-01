@@ -5,6 +5,12 @@
         "DIFF":0.2370617696,
         "DIFF_ABS":0.5179738562
     },
+    "Mittwoch":{
+        "GUESTS":5.9337931034,
+        "WATERTEMP":22,
+        "DIFF":0.1144827586,
+        "DIFF_ABS":0.1424694708
+    },
     "Montag":{
         "GUESTS":88.3846153846,
         "WATERTEMP":22,
